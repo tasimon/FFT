@@ -1,0 +1,17 @@
+A 1D FFT, demonstrates inverse 
+Tyler Simon
+
+To compile:
+
+make
+
+which does:
+
+cc -o fft_test fft1_wav.c fft64.c ifft64.c -I./ 
+
+To Run:
+
+./fft_test sine.wav 
+
+Spectrogram:
+sox test.wav -c 1 trash.wav spectrogram -o test.png
